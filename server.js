@@ -3,7 +3,7 @@ const path = require("node:path");
 const express = require("express");
 
 const app = express();
-const PORT = Number(process.env.PORT) || 8080;
+const PORT = Number(process.env.PORT) || 4173;
 const root = __dirname;
 
 app.use(express.static(root, { index: "index.html", extensions: ["html"] }));

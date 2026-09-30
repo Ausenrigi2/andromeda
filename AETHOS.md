@@ -7,10 +7,10 @@ Single-page marketing site for "Andromeda", a studio selling custom websites and
 - `index.html` — full page markup (hero, services, process, pricing, beyond-web, quote, contact, footer) + mobile nav toggle button
 - `css/main.css` — all styling: palette tokens, panels, 3D console buttons, hidden scrollbar, responsive incl. mobile dropdown menu, reduced-motion rules
 - `js/main.js` — canvas starfield (3 depth layers, per-layer parallax + continuous drift + twinkle), nebula parallax, scroll reveals, header state, mobile nav open/close
-- `server.js` — Express static server; unknown paths fall back to index.html; PORT env, default 8080
+- `server.js` — Express static server; unknown paths fall back to index.html; PORT env, default 4173
 - `package.json` / `package-lock.json` — express ^5.2.1, `npm start` runs the server
-- `Dockerfile` — node:22-alpine, npm ci --omit=dev, non-root user, EXPOSE 8080, wget healthcheck
-- `docker-compose.yml` — maps host 4173 → container 8080, restart unless-stopped
+- `Dockerfile` — node:22-alpine, npm ci --omit=dev, non-root user, EXPOSE 4173, wget healthcheck
+- `docker-compose.yml` — maps host 4173 → container 4173, restart unless-stopped
 - `.dockerignore`, `.gitignore`
 
 ## Run
@@ -18,7 +18,7 @@ Single-page marketing site for "Andromeda", a studio selling custom websites and
 Local (needs Node):
 
     npm install
-    npm start            # http://127.0.0.1:8080
+    npm start            # http://127.0.0.1:4173
 
 Docker (no Node needed):
 
