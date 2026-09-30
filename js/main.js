@@ -163,6 +163,33 @@
     revealEls.forEach((el) => io.observe(el));
   }
 
+  /* ---------------- mobile nav ---------------- */
+
+  const navToggle = document.querySelector(".nav-toggle");
+  if (navToggle) {
+    const menuHeader = document.getElementById("siteHeader");
+    const setMenu = (open) => {
+      menuHeader.classList.toggle("nav-open", open);
+      navToggle.setAttribute("aria-expanded", String(open));
+      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+    navToggle.addEventListener("click", () =>
+      setMenu(!menuHeader.classList.contains("nav-open"))
+    );
+    document.querySelectorAll("#mainNav a").forEach((a) =>
+      a.addEventListener("click", () => setMenu(false))
+    );
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
+    document.addEventListener("click", (e) => {
+      if (menuHeader.classList.contains("nav-open") && !menuHeader.contains(e.target)) setMenu(false);
+    });
+    window.matchMedia("(min-width: 821px)").addEventListener("change", (m) => {
+      if (m.matches) setMenu(false);
+    });
+  }
+
   /* ---------------- header state ---------------- */
 
   const header = document.getElementById("siteHeader");

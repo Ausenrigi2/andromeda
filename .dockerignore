@@ -1,0 +1,6 @@
+.git
+node_modules
+AETHOS.md
+.dockerignore
+docker-compose.yml
+.DS_Store

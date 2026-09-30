@@ -1,0 +1,11 @@
+services:
+  andromeda:
+    build: .
+    image: andromeda-website:latest
+    container_name: andromeda-website
+    ports:
+      # host port matches the dev server port documented in AETHOS.md
+      - "4173:8080"
+    environment:
+      NODE_ENV: production
+    restart: unless-stopped
