@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#05070d">
-  <title>Andromeda · Custom Websites &amp; Software</title>
-  <meta name="description" content="Andromeda designs and builds custom websites, web applications, and standalone software for businesses. From a single static page to full backend systems.">
+  <title data-i18n="index.title">Andromeda · Individuelle Websites &amp; Software</title>
+  <meta name="description" content="Andromeda entwirft und baut individuelle Websites, Webanwendungen und eigenständige Software für Unternehmen – von der statischen Seite bis zum vollständigen Backend." data-i18n-content="index.description">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0f1e'/%3E%3Cpath d='M50 8 L59 41 L92 50 L59 59 L50 92 L41 59 L8 50 L41 41 Z' fill='%2374d7ff'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&family=Unbounded:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/main.css">
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 <body>
 
@@ -26,48 +26,52 @@
 
   <header id="siteHeader">
     <a class="logo" href="#top">ANDROMEDA</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+    <nav id="mainNav" aria-label="Hauptnavigation" data-i18n-aria-label="nav.label">
+      <a href="#services" data-i18n="nav.services">Leistungen</a>
+      <a href="#process" data-i18n="nav.process">Ablauf</a>
+      <a href="#pricing" data-i18n="nav.pricing">Preise</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-aria-label="lang.label">
+      <button type="button" data-lang="de" aria-pressed="true">DE</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-sm btn-primary header-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
       <span class="nt-bar" aria-hidden="true"></span>
       <span class="nt-bar" aria-hidden="true"></span>
       <span class="nt-bar" aria-hidden="true"></span>
     </button>
-    <nav id="mainNav" aria-label="Main">
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn-sm btn-primary header-cta" href="#contact">Start a project</a>
   </header>
 
   <main id="top">
 
     <section class="hero">
       <h1 class="wordmark">ANDROMEDA</h1>
-      <p class="hero-sub">We design and build custom websites and software for businesses that have outgrown templates. One team, from first sketch to launch day — and still around when things need fixing.</p>
-      <p class="avail"><span class="dot" aria-hidden="true"></span>Booking new projects for Q4 2026</p>
+      <p class="hero-sub" data-i18n="hero.sub">Wir entwerfen und bauen individuelle Websites und Software für Unternehmen, die aus Templates herausgewachsen sind. Ein Team – vom ersten Entwurf bis zum Launch und darüber hinaus.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#contact">Start a project</a>
-        <a class="btn" href="#pricing">See website pricing</a>
+        <a class="btn btn-primary" href="#contact" data-i18n="cta.start">Projekt starten</a>
+        <a class="btn" href="#pricing" data-i18n="hero.secondary">Website-Preise ansehen</a>
       </div>
     </section>
 
     <section class="section" id="services">
       <div class="panel reveal">
-        <h2>What we build</h2>
-        <p class="lede">Three ways companies usually need us. All of them start the same way: a conversation about the problem, not the solution.</p>
+        <h2 data-i18n="services.title">Was wir bauen</h2>
+        <p class="lede" data-i18n="services.lede">Drei Wege, wie Unternehmen uns üblicherweise brauchen. Alle beginnen gleich: mit einem Gespräch über das Problem, nicht über die Lösung.</p>
         <div class="rows">
           <div class="row">
-            <h3>Websites</h3>
-            <p>Marketing sites, product pages, shops. Designed around how your customers actually move, not around page counts. Fast, legible, and yours to host anywhere.</p>
+            <h3 data-i18n="services.websites.title">Websites</h3>
+            <p data-i18n="services.websites.text">Marketing-Websites, Produktseiten, Shops. Gestaltet danach, wie Ihre Kundinnen und Kunden sich tatsächlich bewegen – nicht nach Seitenzahl. Schnell, gut lesbar und überall hostbar.</p>
           </div>
           <div class="row">
-            <h3>Web applications</h3>
-            <p>Portals, dashboards, customer areas. Software that does something when you click it, backed by data that belongs to you — with an admin side your team can use without asking us first.</p>
+            <h3 data-i18n="services.apps.title">Webanwendungen</h3>
+            <p data-i18n="services.apps.text">Portale, Dashboards, Kundenbereiche. Software, die auf Klick etwas tut – mit Daten, die Ihnen gehören, und einem Admin-Bereich, den Ihr Team ohne Rückfrage nutzen kann.</p>
           </div>
           <div class="row">
-            <h3>Standalone programs</h3>
-            <p>Automations, internal tools, one-off utilities. If a task repeats itself every week, it probably shouldn't be manual. We'll tell you straight if it needs software at all.</p>
+            <h3 data-i18n="services.standalone.title">Eigenständige Programme</h3>
+            <p data-i18n="services.standalone.text">Automatisierungen, interne Tools, einmalige Utilities. Wenn sich eine Aufgabe jede Woche wiederholt, sollte sie wahrscheinlich nicht manuell sein. Wir sagen Ihnen ehrlich, ob es überhaupt Software braucht.</p>
           </div>
         </div>
       </div>
@@ -75,42 +79,42 @@
 
     <section class="section" id="process">
       <div class="panel reveal">
-        <h2>How a build runs</h2>
-        <p class="lede">Five steps. No black box, no disappearing acts, no big-reveal on the last day.</p>
+        <h2 data-i18n="process.title">So läuft ein Projekt</h2>
+        <p class="lede" data-i18n="process.lede">Fünf Schritte. Keine Blackbox, kein Verschwinden, keine große Enthüllung am letzten Tag.</p>
         <ol class="steps">
           <li class="step">
             <span class="step-num">01</span>
             <div>
-              <h3>Scope</h3>
-              <p>A short call about what's broken or missing. You get a fixed quote within five working days — a number, not a range with asterisks.</p>
+              <h3 data-i18n="process.scope.title">Umfang</h3>
+              <p data-i18n="process.scope.text">Ein kurzes Gespräch darüber, was fehlt oder nicht funktioniert. Sie erhalten innerhalb von fünf Werktagen ein fixes Angebot – eine Zahl, keine Spanne mit Sternchen.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">02</span>
             <div>
-              <h3>Design</h3>
-              <p>You see a clickable prototype before any final code exists. Changes are cheap now and expensive later, so we spend the time here.</p>
+              <h3 data-i18n="process.design.title">Design</h3>
+              <p data-i18n="process.design.text">Sie sehen einen klickbaren Prototyp, bevor finaler Code entsteht. Änderungen sind jetzt günstig und später teuer, deshalb investieren wir hier die Zeit.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">03</span>
             <div>
-              <h3>Build</h3>
-              <p>Weekly demos while we work. You watch the thing take shape instead of waiting for a demo nobody prepared for.</p>
+              <h3 data-i18n="process.build.title">Umsetzung</h3>
+              <p data-i18n="process.build.text">Wöchentliche Demos während der Arbeit. Sie sehen, wie das Projekt Form annimmt, statt auf eine Demo zu warten, die niemand vorbereitet hat.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">04</span>
             <div>
-              <h3>Launch</h3>
-              <p>We ship, monitor, and stay on the line for two weeks. No "good luck, it's Friday" deploys.</p>
+              <h3 data-i18n="process.launch.title">Launch</h3>
+              <p data-i18n="process.launch.text">Wir liefern aus, beobachten und bleiben zwei Wochen erreichbar. Kein „Viel Glück, es ist Freitag“-Deploy.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">05</span>
             <div>
-              <h3>Support</h3>
-              <p>Monthly care or ad-hoc, your call. Same team that built it, so nothing gets lost in a handover.</p>
+              <h3 data-i18n="process.support.title">Betreuung</h3>
+              <p data-i18n="process.support.text">Monatliche Betreuung oder auf Zuruf – Sie entscheiden. Dasselbe Team, das gebaut hat, damit bei der Übergabe nichts verloren geht.</p>
             </div>
           </li>
         </ol>
@@ -119,95 +123,112 @@
 
     <section class="section" id="pricing">
       <div class="panel-head reveal">
-        <h2>Website packages</h2>
-        <p class="lede">Three starting points, from a static page to a full backend. Every project starts with a call and ends with a fixed quote before any work begins.</p>
+        <h2 data-i18n="pricing.title">Website-Pakete</h2>
+        <p class="lede" data-i18n="pricing.lede">Drei Ausgangspunkte, von der statischen Seite bis zum vollständigen Backend. Jedes Projekt beginnt mit einem Gespräch und endet mit einem fixen Angebot, bevor die Arbeit beginnt.</p>
       </div>
       <div class="tiers">
         <article class="tier reveal">
-          <h3 class="tier-name">Landing</h3>
-          <p class="tier-desc">A static site in clean HTML and CSS. For showing up well without running anything.</p>
-          <p class="price"><span class="from">from</span>€400</p>
-          <p class="delivery">delivery 1–2 weeks</p>
+          <h3 class="tier-name" data-i18n="tier.landing.name">Landing</h3>
+          <p class="tier-desc" data-i18n="tier.landing.desc">Eine statische Website in sauberem HTML und CSS. Um gut sichtbar zu sein, ohne etwas betreiben zu müssen.</p>
+          <p class="price"><span class="from" data-i18n="price.from">ab</span>€600</p>
+          <p class="delivery" data-i18n="tier.landing.delivery">Lieferung 1–2 Wochen</p>
           <ul class="features">
-            <li><span class="tick">✦</span>Up to four pages, hand-written markup</li>
-            <li><span class="tick">✦</span>Responsive down to small phones</li>
-            <li><span class="tick">✦</span>Fast by default, Lighthouse 95+ target</li>
-            <li><span class="tick">✦</span>On-page SEO basics and meta setup</li>
-            <li><span class="tick">✦</span>One revision round included</li>
-            <li><span class="tick">✦</span>Files handed over, host it anywhere</li>
+            <li><span class="tick">✦</span><span data-i18n="tier.landing.f1">Bis zu vier Seiten, handgeschriebenes Markup</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.landing.f2">Responsiv bis auf kleine Smartphones</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.landing.f3">Schnell von Haus aus, Lighthouse-Ziel 95+</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.landing.f4">On-Page-SEO-Grundlagen und Meta-Setup</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.landing.f5">Eine Korrekturrunde inklusive</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.landing.f6">Dateien werden übergeben, Hosting überall möglich</span></li>
           </ul>
-          <a class="btn tier-cta" href="#contact">Start a project</a>
+          <a class="btn tier-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
         </article>
 
         <article class="tier featured reveal">
-          <p class="chip">Most booked</p>
-          <h3 class="tier-name">Orbit</h3>
-          <p class="tier-desc">A dynamic site you can edit yourself, built to keep growing after launch.</p>
-          <p class="price"><span class="from">from</span>€600</p>
-          <p class="delivery">delivery 3–5 weeks</p>
+          <h3 class="tier-name" data-i18n="tier.orbit.name">Orbit</h3>
+          <p class="tier-desc" data-i18n="tier.orbit.desc">Eine dynamische Website, die Sie selbst bearbeiten können – gebaut, um nach dem Launch weiterzuwachsen.</p>
+          <p class="price"><span class="from" data-i18n="price.from">ab</span>€800</p>
+          <p class="delivery" data-i18n="tier.orbit.delivery">Lieferung 3–5 Wochen</p>
           <ul class="features">
-            <li><span class="tick">✦</span>Everything in Landing, plus a real content layer</li>
-            <li><span class="tick">✦</span>Add or edit pages without touching code</li>
-            <li><span class="tick">✦</span>Blog, categories, and search</li>
-            <li><span class="tick">✦</span>Multilingual ready</li>
-            <li><span class="tick">✦</span>Forms wired to your inbox or CRM</li>
-            <li><span class="tick">✦</span>Analytics, privacy-friendly tracking</li>
+            <li><span class="tick">✦</span><span data-i18n="tier.orbit.f1">Alles aus Landing, plus eine echte Content-Ebene</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.orbit.f2">Seiten hinzufügen oder bearbeiten, ohne Code anzufassen</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.orbit.f3">Blog, Kategorien und Suche</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.orbit.f4">Mehrsprachig vorbereitet</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.orbit.f5">Formulare an Ihr Postfach oder CRM angebunden</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.orbit.f6">Analytics, datenschutzfreundliches Tracking</span></li>
           </ul>
-          <a class="btn btn-primary tier-cta" href="#contact">Start a project</a>
+          <a class="btn btn-primary tier-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
         </article>
 
         <article class="tier reveal">
-          <h3 class="tier-name">Deep Field</h3>
-          <p class="tier-desc">A web application with its own backend. For when the website is just the front door.</p>
-          <p class="price"><span class="from">from</span>€1,000</p>
-          <p class="delivery">delivery 6–10 weeks</p>
+          <h3 class="tier-name" data-i18n="tier.deep.name">Deep Field</h3>
+          <p class="tier-desc" data-i18n="tier.deep.desc">Eine Webanwendung mit eigenem Backend. Wenn die Website nur die Eingangstür ist.</p>
+          <p class="price"><span class="from" data-i18n="price.from">ab</span>€1.200</p>
+          <p class="delivery" data-i18n="tier.deep.delivery">Lieferung 6–10 Wochen</p>
           <ul class="features">
-            <li><span class="tick">✦</span>Custom backend, database, auth and roles</li>
-            <li><span class="tick">✦</span>Integrations: APIs, payments, internal systems</li>
-            <li><span class="tick">✦</span>Admin area your team runs day to day</li>
-            <li><span class="tick">✦</span>Deployed on your cloud or ours</li>
-            <li><span class="tick">✦</span>Docs and a training session included</li>
-            <li><span class="tick">✦</span>30 days of post-launch support</li>
+            <li><span class="tick">✦</span><span data-i18n="tier.deep.f1">Individuelles Backend, Datenbank, Auth und Rollen</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.deep.f2">Integrationen: APIs, Zahlungen, interne Systeme</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.deep.f3">Admin-Bereich, den Ihr Team täglich nutzt</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.deep.f4">Betrieb in Ihrer Cloud oder bei uns</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.deep.f5">Dokumentation und eine Einschulung inklusive</span></li>
+            <li><span class="tick">✦</span><span data-i18n="tier.deep.f6">14 Tage Support nach dem Launch</span></li>
           </ul>
-          <a class="btn tier-cta" href="#contact">Start a project</a>
+          <a class="btn tier-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
         </article>
       </div>
-      <p class="tiers-note reveal">Every package ships with source code, documentation, and ownership that is entirely yours.</p>
+      <p class="tiers-note reveal" data-i18n="pricing.note">Jedes Paket enthält Quellcode, Dokumentation und vollständiges Eigentum.</p>
       <div class="hosting reveal">
-        <p class="hosting-tag">Hosting add-on</p>
-        <p>We don't host anyone's site — yours stays on your account. For €50 flat we set it up on a Hetzner node: deployed, secured, documented. Keep it there, move it anywhere, or replace us.</p>
-      </div>
-      <div class="hosting reveal">
-        <p class="hosting-tag">Post-launch pricing</p>
-        <p>After launch: support for up to 14 days — €50. Changes after the first seven days — €150 extra. Flat rates, agreed before any work starts.</p>
+        <p class="hosting-tag" data-i18n="postlaunch.title">Nach dem Launch</p>
+        <p data-i18n="postlaunch.text">14 Tage Support nach der Auslieferung. Änderungen danach: Preis auf Anfrage.</p>
       </div>
     </section>
 
     <section class="section" id="custom">
       <div class="panel reveal">
-        <h2>Beyond the browser</h2>
-        <p class="lede">Not every build needs a website. Andromeda also ships standalone software: data pipelines, process automations, desktop tools, one-off utilities. If a process keeps eating hours of your team's week, send it over — we'll tell you honestly whether it needs building at all, and if it does, we'll build it properly.</p>
+        <h2 data-i18n="custom.title">Jenseits des Browsers</h2>
+        <p class="lede" data-i18n="custom.lede">Nicht jedes Projekt braucht eine Website. Andromeda liefert auch eigenständige Software: Datenpipelines, Prozessautomatisierungen, Desktop-Tools, einmalige Utilities. Wenn ein Prozess Ihrem Team jede Woche Stunden stiehlt, schicken Sie ihn uns – wir sagen Ihnen ehrlich, ob er überhaupt gebaut werden muss, und wenn ja, bauen wir ihn ordentlich.</p>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="panel contact reveal">
-        <h2>Want custom software that isn't a website?</h2>
-        <p class="lede">Send us the problem instead of a spec — a process that drags, a pipeline that breaks, a tool your team keeps wishing existed. A short call, a straight answer, and a number if it's worth doing.</p>
+        <h2 data-i18n="contact.title">Sie brauchen individuelle Software, die keine Website ist?</h2>
+        <p class="lede" data-i18n="contact.lede">Schicken Sie uns das Problem statt einer Spezifikation – einen Prozess, der bremst, eine Pipeline, die bricht, ein Tool, das Ihr Team sich schon lange wünscht. Ein kurzes Gespräch, eine klare Antwort und eine Zahl, wenn es sich lohnt.</p>
         <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:hello@andromeda-dev.space?subject=Project%20inquiry">Start a project</a>
+          <a class="btn btn-primary" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#46;&#109;&#97;&#117;&#114;&#101;&#114;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;" data-i18n="cta.start">Projekt starten</a>
         </div>
-        <p class="contact-meta">hello@andromeda-dev.space</p>
+        <div class="contact-box">
+          <address class="contact-org">
+            <strong>Andromeda JuniorCompany</strong> <span class="placeholder">[RECHTSFORM]</span><br>
+            HTL Leonding<br>
+            Limesstraße 12–14<br>
+            A-4060 Leonding<br>
+            <span data-i18n="legal.country">Österreich</span>
+          </address>
+          <ul class="contact-people">
+            <li>
+              <strong>Niklas Maurer</strong>
+              <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#46;&#109;&#97;&#117;&#114;&#101;&#114;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;">&#110;&#46;&#109;&#97;&#117;&#114;&#101;&#114;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;</a>
+              <a href="tel:+436766044202">+43 676 6044202</a>
+            </li>
+            <li>
+              <strong>Patrick Genböck</strong>
+              <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#46;&#103;&#101;&#110;&#98;&#111;&#101;&#99;&#107;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;">&#112;&#46;&#103;&#101;&#110;&#98;&#111;&#101;&#99;&#107;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;</a>
+              <a href="tel:+4367763544480">+43 677 63544480</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p class="coords">m31 · ra 00h 42m 44s · dec +41° 16′ 09″</p>
-    <p class="copy">© 2026 Andromeda · custom websites &amp; software, built to order</p>
+    <p class="coords">48.2684° N · 14.2516° E · HTL Leonding, <span data-i18n="footer.address">Limesstraße 12–14, 4060 Leonding, Oberösterreich</span></p>
+    <p class="copy" data-i18n="footer.copy">© 2026 Andromeda JuniorCompany · individuelle Websites &amp; Software nach Maß</p>
+    <p class="footer-links"><a href="impressum.html" data-i18n="footer.imprint">Impressum</a> · <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></p>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

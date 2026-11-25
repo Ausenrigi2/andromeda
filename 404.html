@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="dark">
+  <title>Seite nicht gefunden · Andromeda</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #05070d;
+      color: #e9ecf8;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      padding: 24px;
+    }
+    p { color: #9aa4c4; line-height: 1.7; }
+    a { color: #74d7ff; }
+    .brand { font-size: 13px; letter-spacing: 0.14em; color: #6b7494; margin-bottom: 18px; }
+    footer { margin-top: 24px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="brand">ANDROMEDA</p>
+    <h1>Seite nicht gefunden</h1>
+    <p>Diese Seite existiert nicht. Sie werden zur Startseite weitergeleitet.</p>
+  </div>
+  <footer>
+    <p><a id="homeLink" href="./">Zur Startseite</a> · <a id="imprintLink" href="impressum.html">Impressum</a> · <a id="privacyLink" href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+  <script>
+    (function () {
+      var depth = location.pathname.split("/").filter(Boolean).length;
+      var home = "../".repeat(depth) || "./";
+      document.getElementById("homeLink").href = home;
+      document.getElementById("imprintLink").href = home + "impressum.html";
+      document.getElementById("privacyLink").href = home + "datenschutz.html";
+      location.replace(home);
+    })();
+  </script>
+</body>
+</html>

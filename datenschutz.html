@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#05070d">
+  <title data-i18n="privacy.pageTitle">Datenschutz · Andromeda</title>
+  <meta name="description" content="Datenschutzerklärung der Website von Andromeda JuniorCompany." data-i18n-content="privacy.description">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0f1e'/%3E%3Cpath d='M50 8 L59 41 L92 50 L59 59 L50 92 L41 59 L8 50 L41 41 Z' fill='%2374d7ff'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="bg" aria-hidden="true">
+    <div class="nebula-wrap" id="nebulaWrap">
+      <div class="nebula"></div>
+      <div class="milkyway"></div>
+    </div>
+    <canvas id="stars"></canvas>
+    <div class="vignette"></div>
+  </div>
+
+  <header id="siteHeader">
+    <a class="logo" href="index.html">ANDROMEDA</a>
+    <nav id="mainNav" aria-label="Hauptnavigation" data-i18n-aria-label="nav.label">
+      <a href="index.html#services" data-i18n="nav.services">Leistungen</a>
+      <a href="index.html#process" data-i18n="nav.process">Ablauf</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">Preise</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-aria-label="lang.label">
+      <button type="button" data-lang="de" aria-pressed="true">DE</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-sm btn-primary header-cta" href="index.html#contact" data-i18n="cta.start">Projekt starten</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
+      <span class="nt-bar" aria-hidden="true"></span>
+      <span class="nt-bar" aria-hidden="true"></span>
+      <span class="nt-bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="top" class="legal">
+    <article class="panel legal-panel">
+      <p class="eyebrow" data-i18n="privacy.eyebrow">Rechtliches</p>
+      <h1 data-i18n="privacy.title">Datenschutzerklärung</h1>
+      <p class="legal-note" data-lang-only="en" data-i18n="legal.translationNote">This is a translation. The German version is legally binding.</p>
+      <p data-i18n="privacy.intro">Diese Website verarbeitet personenbezogene Daten nur im folgenden Umfang. Es werden keine Cookies zu Analyse- oder Marketingzwecken eingesetzt.</p>
+
+      <h2 data-i18n="privacy.controller.title">Verantwortlicher</h2>
+      <p>Niklas Maurer<br>Andromeda JuniorCompany<br>HTL Leonding<br>Limesstraße 12–14<br>A-4060 Leonding<br><span data-i18n="legal.country">Österreich</span><br>
+        <span data-i18n="privacy.emailLabel">E-Mail</span>: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#46;&#109;&#97;&#117;&#114;&#101;&#114;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;">&#110;&#46;&#109;&#97;&#117;&#114;&#101;&#114;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;</a><br>
+        <span data-i18n="privacy.phoneLabel">Telefon</span>: <a href="tel:+436766044202">+43 676 6044202</a></p>
+
+      <h2 data-i18n="privacy.hosting.title">Hosting</h2>
+      <p data-i18n="privacy.hosting.p1">Diese Website wird über GitHub Pages gehostet. Anbieter ist GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeitet GitHub technische Zugriffsdaten, insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp und Betriebssystem. Diese Daten sind für den sicheren und stabilen Betrieb der Website erforderlich.</p>
+      <p><span data-i18n="privacy.hosting.p2">Rechtsgrundlage ist unser berechtigtes Interesse an der sicheren Bereitstellung der Website gemäß Art. 6 Abs. 1 lit. f DSGVO. GitHub kann Daten in die USA übertragen. Weitere Informationen finden Sie im</span> <a href="https://docs.github.com/en/site-policies/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>.</p>
+
+      <h2 data-i18n="privacy.storage.title">Lokale Speicherung der Sprache</h2>
+      <p data-i18n="privacy.storage.text">Die von Ihnen gewählte Sprache wird im localStorage Ihres Browsers gespeichert. Diese Information bleibt auf Ihrem Gerät und wird nicht an uns übertragen. Sie können sie jederzeit über die Einstellungen Ihres Browsers löschen. Rechtsgrundlage ist unser berechtigtes Interesse an einer benutzerfreundlichen Darstellung gemäß Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+      <h2 data-i18n="privacy.cookies.title">Cookies und Tracking</h2>
+      <p data-i18n="privacy.cookies.text">Diese Website verwendet keine Cookies und keine Analyse-, Werbe- oder Tracking-Dienste. Die verwendeten Schriftarten werden von unserem eigenen Webserver geladen; es werden keine Schriftarten von Google-Servern abgerufen.</p>
+
+      <h2 data-i18n="privacy.contact.title">Kontaktaufnahme</h2>
+      <p data-i18n="privacy.contact.text">Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen übermittelten Daten (Name, E-Mail-Adresse, Telefonnummer und Inhalt der Anfrage), um Ihre Anfrage zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die Anfrage auf einen Vertrag oder die Anbahnung eines Vertrags gerichtet ist, andernfalls Art. 6 Abs. 1 lit. f DSGVO. Ihre Kontaktdaten werden nicht an Dritte weitergegeben, außer wenn dies zur Bearbeitung erforderlich ist oder gesetzliche Pflichten bestehen.</p>
+      <p data-i18n="privacy.contact.provision">Die Bereitstellung dieser Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne Ihre Angaben können wir Ihre Anfrage jedoch nicht bearbeiten.</p>
+
+      <h2 data-i18n="privacy.retention.title">Speicherdauer</h2>
+      <p data-i18n="privacy.retention.text">Wir speichern Ihre Anfrage nur so lange, wie es für die Bearbeitung erforderlich ist, oder solange gesetzliche Aufbewahrungspflichten bestehen. Danach werden die Daten gelöscht.</p>
+
+      <h2 data-i18n="privacy.rights.title">Ihre Rechte</h2>
+      <p data-i18n="privacy.rights.text">Sie haben das Recht auf Auskunft über die zu Ihrer Person gespeicherten Daten, auf Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen die Verarbeitung. Soweit die Verarbeitung auf einer Einwilligung beruht, können Sie diese jederzeit widerrufen.</p>
+      <p><span data-i18n="privacy.rights.complaint">Sie haben außerdem das Recht, sich bei der Österreichischen Datenschutzbehörde, Barichgasse 40–42, 1030 Wien,</span> <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">dsb.gv.at</a> zu beschweren.</p>
+
+      <h2 data-i18n="privacy.automated.title">Keine automatisierte Entscheidungsfindung</h2>
+      <p data-i18n="privacy.automated.text">Eine automatisierte Entscheidungsfindung einschließlich Profiling findet nicht statt.</p>
+
+      <h2 data-i18n="privacy.changes.title">Änderungen</h2>
+      <p data-i18n="privacy.changes.text">Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Website oder die rechtlichen Anforderungen ändern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
+
+      <p class="legal-note" data-i18n="privacy.updated">Stand: November 2026</p>
+    </article>
+  </main>
+
+  <footer>
+    <p class="coords">48.2684° N · 14.2516° E · HTL Leonding, <span data-i18n="footer.address">Limesstraße 12–14, 4060 Leonding, Oberösterreich</span></p>
+    <p class="copy" data-i18n="footer.copy">© 2026 Andromeda JuniorCompany · individuelle Websites &amp; Software nach Maß</p>
+    <p class="footer-links"><a href="impressum.html" data-i18n="footer.imprint">Impressum</a> · <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
