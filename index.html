@@ -15,6 +15,8 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#top" data-i18n="skip.link">Zum Inhalt springen</a>
+
   <div class="bg" aria-hidden="true">
     <div class="nebula-wrap" id="nebulaWrap">
       <div class="nebula"></div>
@@ -29,15 +31,14 @@
     <nav id="mainNav" aria-label="Hauptnavigation" data-i18n-aria-label="nav.label">
       <a href="#services" data-i18n="nav.services">Leistungen</a>
       <a href="#process" data-i18n="nav.process">Ablauf</a>
-      <a href="#pricing" data-i18n="nav.pricing">Preise</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pakete</a>
       <a href="#contact" data-i18n="nav.contact">Kontakt</a>
     </nav>
     <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-aria-label="lang.label">
-      <button type="button" data-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-lang="de" aria-pressed="true" aria-label="Deutsch">DE</button>
       <span aria-hidden="true">|</span>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
     </div>
-    <a class="btn btn-sm btn-primary header-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
       <span class="nt-bar" aria-hidden="true"></span>
       <span class="nt-bar" aria-hidden="true"></span>
@@ -45,14 +46,14 @@
     </button>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1">
 
     <section class="hero">
       <h1 class="wordmark">ANDROMEDA</h1>
       <p class="hero-sub" data-i18n="hero.sub">Wir bauen individuelle Websites und Software für Unternehmen, denen Templates nicht mehr reichen. Ein Team vom ersten Entwurf bis zum Launch – und danach noch erreichbar.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#contact" data-i18n="cta.start">Projekt starten</a>
-        <a class="btn" href="#pricing" data-i18n="hero.secondary">Website-Preise ansehen</a>
+        <a class="btn" href="#pricing" data-i18n="hero.secondary">Website-Pakete ansehen</a>
       </div>
     </section>
 
@@ -140,7 +141,6 @@
             <li><span class="tick">✦</span><span data-i18n="tier.landing.f5">Eine Korrekturrunde inklusive</span></li>
             <li><span class="tick">✦</span><span data-i18n="tier.landing.f6">Dateien werden übergeben, Hosting überall möglich</span></li>
           </ul>
-          <a class="btn tier-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
         </article>
 
         <article class="tier featured reveal">
@@ -156,7 +156,6 @@
             <li><span class="tick">✦</span><span data-i18n="tier.orbit.f5">Formulare an Ihr Postfach oder CRM angebunden</span></li>
             <li><span class="tick">✦</span><span data-i18n="tier.orbit.f6">Statistiken mit datenschutzfreundlichem Tracking</span></li>
           </ul>
-          <a class="btn btn-primary tier-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
         </article>
 
         <article class="tier reveal">
@@ -172,30 +171,27 @@
             <li><span class="tick">✦</span><span data-i18n="tier.deep.f5">Dokumentation und eine Einschulung inklusive</span></li>
             <li><span class="tick">✦</span><span data-i18n="tier.deep.f6">14 Tage Support nach dem Launch</span></li>
           </ul>
-          <a class="btn tier-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
         </article>
       </div>
       <p class="tiers-note reveal" data-i18n="pricing.note">Quellcode, Dokumentation und alle Rechte gehören bei jedem Paket Ihnen.</p>
       <div class="hosting reveal">
         <p class="hosting-tag" data-i18n="postlaunch.title">Nach dem Launch</p>
-        <p data-i18n="postlaunch.text">14 Tage Support nach der Auslieferung. Änderungen danach: Preis auf Anfrage.</p>
+        <p data-i18n="postlaunch.text">Änderungen danach: Preis auf Anfrage.</p>
       </div>
+      <p class="tiers-link reveal"><a href="#contact" data-i18n="pricing.contactLink">Fragen zu den Paketen? Direkt zum Kontakt</a></p>
     </section>
 
     <section class="section" id="custom">
       <div class="panel reveal">
         <h2 data-i18n="custom.title">Jenseits des Browsers</h2>
-        <p class="lede" data-i18n="custom.lede">Nicht jedes Projekt braucht eine Website. Wir liefern auch eigenständige Software: Datenpipelines, Prozessautomatisierungen, Desktop-Tools, kleine Helfer. Wenn ein Prozess Ihr Team jede Woche Stunden kostet, schicken Sie ihn uns. Wir sagen Ihnen ehrlich, ob er überhaupt gebaut werden muss, und wenn ja, bauen wir ihn ordentlich.</p>
+        <p class="lede" data-i18n="custom.lede">Nicht jedes Projekt braucht eine Website. Wenn ein Prozess Ihr Team jede Woche Stunden kostet, schicken Sie ihn uns. Wir sagen Ihnen ehrlich, ob er gebaut werden muss, und wenn ja, bauen wir ihn ordentlich.</p>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="panel contact reveal">
-        <h2 data-i18n="contact.title">Sie brauchen individuelle Software, die keine Website ist?</h2>
+        <h2 data-i18n="contact.title">Kontakt</h2>
         <p class="lede" data-i18n="contact.lede">Schicken Sie uns das Problem statt einer Spezifikation: einen Prozess, der bremst, eine Pipeline, die bricht, ein Tool, das sich Ihr Team schon lange wünscht. Ein kurzes Gespräch, eine klare Antwort und eine Zahl, wenn es sich lohnt.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#46;&#109;&#97;&#117;&#114;&#101;&#114;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#104;&#116;&#108;&#45;&#108;&#101;&#111;&#110;&#100;&#105;&#110;&#103;&#46;&#97;&#99;&#46;&#97;&#116;" data-i18n="cta.start">Projekt starten</a>
-        </div>
         <div class="contact-box">
           <address class="contact-org">
             <strong>Andromeda JuniorCompany</strong> <br>

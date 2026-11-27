@@ -14,6 +14,8 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#top" data-i18n="skip.link">Zum Inhalt springen</a>
+
   <div class="bg" aria-hidden="true">
     <div class="nebula-wrap" id="nebulaWrap">
       <div class="nebula"></div>
@@ -28,15 +30,14 @@
     <nav id="mainNav" aria-label="Hauptnavigation" data-i18n-aria-label="nav.label">
       <a href="index.html#services" data-i18n="nav.services">Leistungen</a>
       <a href="index.html#process" data-i18n="nav.process">Ablauf</a>
-      <a href="index.html#pricing" data-i18n="nav.pricing">Preise</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">Pakete</a>
       <a href="index.html#contact" data-i18n="nav.contact">Kontakt</a>
     </nav>
     <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-aria-label="lang.label">
-      <button type="button" data-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-lang="de" aria-pressed="true" aria-label="Deutsch">DE</button>
       <span aria-hidden="true">|</span>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
     </div>
-    <a class="btn btn-sm btn-primary header-cta" href="index.html#contact" data-i18n="cta.start">Projekt starten</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
       <span class="nt-bar" aria-hidden="true"></span>
       <span class="nt-bar" aria-hidden="true"></span>
@@ -44,7 +45,7 @@
     </button>
   </header>
 
-  <main id="top" class="legal">
+  <main id="top" class="legal" tabindex="-1">
     <article class="panel legal-panel">
       <p class="eyebrow" data-i18n="imprint.eyebrow">Rechtliches</p>
       <h1 data-i18n="imprint.title">Impressum</h1>
